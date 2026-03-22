@@ -1,0 +1,93 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Invitation</title><style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #008080, #f7e7ce, #fff8dc);
+    color: #333;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #ffffff;
+}
+
+h2 {
+    color: #444;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: teal;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    margin-top: 10px;
+}
+</style></head><body><div class="container"><h1>#AchidFallReenLove 💍</h1><div class="card">
+    <h2>You're Invited</h2>
+    <p><b>Achid</b> & <b>Reen</b></p>
+    <p>Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan kami</p>
+</div><div class="card">
+    <h2>Details</h2>
+    <p>📅 Tarikh: 12 Disember 2026</p>
+    <p>⏰ Masa: 11.00 pagi</p>
+    <p>📍 Lokasi: Dewan Seri Impian</p>
+</div><div class="card">
+    <h2>Guestbook ✍️</h2>
+    <input type="text" id="nameInput" placeholder="Tulis nama anda">
+    <br>
+    <button onclick="addGuest()">Hadir</button>
+    <ul id="guestList"></ul>
+</div><div class="card">
+    <h2>Music 🎶</h2>
+    <button onclick="toggleMusic()">Play / Pause</button>
+</div></div><audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio><script>
+let music = document.getElementById("bgMusic");
+
+function toggleMusic() {
+    if (music.paused) {
+        music.play();
+    } else {
+        music.pause();
+    }
+}
+
+function addGuest() {
+    let input = document.getElementById("nameInput");
+    let list = document.getElementById("guestList");
+
+    if (input.value !== "") {
+        let li = document.createElement("li");
+        li.textContent = input.value;
+        list.appendChild(li);
+        input.value = "";
+    }
+}
+</script></body>
+</html>
