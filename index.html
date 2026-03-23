@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Butterfly Animation</title>
+
+<style>
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Container rama-rama */
+.butterfly {
+  position: fixed;
+  left: -100px;
+  top: 30%;
+  width: 80px;
+  animation: fly 12s linear infinite;
+}
+
+/* Animasi terbang */
+@keyframes fly {
+  0% {
+    left: -100px;
+    top: 20%;
+    transform: scale(0.6) rotate(0deg);
+  }
+  25% {
+    top: 40%;
+  }
+  50% {
+    top: 30%;
+  }
+  75% {
+    top: 50%;
+  }
+  100% {
+    left: 110%;
+    top: 25%;
+    transform: scale(1) rotate(10deg);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Gambar rama-rama -->
+<img src="download-removebg-preview" class="butterfly">
+
+</body>
+</html>
 <section id="salam">
  <div class="salam-section">
   <img src="ying.png" class="img-salam">
