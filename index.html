@@ -232,24 +232,6 @@
       padding: 100px 24px;
     }
 
-    /* ── Mute button ─────────────────────────────── */
-    #muteBtn {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      z-index: 999;
-      background: rgba(255,255,255,0.92);
-      border: 1px solid var(--champagne);
-      border-radius: 50%;
-      width: 48px; height: 48px;
-      display: flex; align-items: center; justify-content: center;
-      cursor: pointer;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-      color: var(--teal);
-    }
-    #muteBtn:hover { transform: scale(1.1); }
-
     /* ── Scroll nav dots ─────────────────────────── */
     .section-heading {
       text-align: center;
@@ -317,8 +299,7 @@
  <body class="h-full">
   <!-- ══════════════════════════════════════════
        MUTE BUTTON (fixed)
-  ══════════════════════════════════════════ --> <button id="muteBtn" aria-label="Toggle music"> <i data-lucide="volume-2" style="width:20px;height:20px;"></i> </button> <!-- Toast notification -->
-  <div id="toast" role="status" aria-live="polite"></div><!-- ══════════════════════════════════════════
+  -- ══════════════════════════════════════════
        HERO / LANDING SECTION
   ══════════════════════════════════════════ -->
   <section class="hero" id="home">
