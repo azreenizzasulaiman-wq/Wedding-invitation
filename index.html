@@ -147,6 +147,112 @@
       overflow: hidden;
     }
 
+   <section style="position:relative;text-align:center;padding:80px 20px;
+background:linear-gradient(to bottom,#fff8f2,#fff);overflow:hidden;">
+
+  <h2 style="font-size:30px;color:#b48a78;margin-bottom:10px;
+  animation: fadeIn 2s ease;">
+    📍 https://www.google.com/maps/place/SURAU+IMAM+MAHAT+HARUN+KG.REZAB+LAMBANGA+APIN-APIN+KENINGAU/@5.438726,116.2468168,3159m/data=!3m1!1e3!4m14!1m7!3m6!1s0x323cf333001f276d:0xf85885efaadf02dd!2sSURAU+IMAM+MAHAT+HARUN+KG.REZAB+LAMBANGA+APIN-APIN+KENINGAU!8m2!3d5.4387604!4d116.2529562!16s%2Fg%2F11rz2tstzf!3m5!1s0x323cf333001f276d:0xf85885efaadf02dd!8m2!3d5.4387604!4d116.2529562!16s%2Fg%2F11rz2tstzf!5m1!1e2?entry=ttu&g_ep=EgoyMDI2MDMxOC4xIKXMDSoASAFQAw%3D%3D
+  </h2>
+
+  <p style="color:#888;margin-bottom:30px;animation: fadeIn 3s ease;">
+    Dengan penuh kasih, kami menjemput anda hadir
+  </p>
+
+  <!-- Button Maps -->
+  <a href="https://maps.google.com/?q=LOKASI_ANDA" target="_blank" 
+  style="display:inline-block;padding:14px 28px;
+  background:linear-gradient(45deg,#d4af37,#caa45d);
+  color:white;text-decoration:none;border-radius:30px;
+  box-shadow:0 6px 20px rgba(0,0,0,0.15);
+  transition:0.3s;font-size:16px;"
+  onmouseover="this.style.transform='scale(1.08)'"
+  onmouseout="this.style.transform='scale(1)'">
+    Buka Google Maps
+  </a>
+
+  <!-- QR Code -->
+  <div style="margin-top:35px;">
+    <img src="rama2edited.png" alt="QR Lokasi"
+    style="width:160px;border-radius:20px;
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+    animation: float 3s ease-in-out infinite;">
+    <p style="font-size:14px;color:#aaa;margin-top:10px;">
+      Scan untuk ke lokasi
+    </p>
+  </div>
+
+  <!-- Bunga (decor simple CSS) -->
+  <div class="flower"></div>
+  <div class="flower2"></div>
+
+  <!-- Rama-rama -->
+  <div class="butterfly">🦋</div>
+  <div class="butterfly2">🦋</div>
+
+</section>
+
+<style>
+
+/* Fade masuk */
+@keyframes fadeIn {
+  from {opacity:0; transform:translateY(20px);}
+  to {opacity:1; transform:translateY(0);}
+}
+
+/* QR float */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Bunga lembut */
+.flower, .flower2 {
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:radial-gradient(circle,#f8d7da,#f3c6c9);
+  border-radius:50%;
+  opacity:0.3;
+  animation: float 6s ease-in-out infinite;
+}
+
+.flower {
+  top:20px;
+  left:10px;
+}
+
+.flower2 {
+  bottom:20px;
+  right:10px;
+}
+
+/* Rama-rama animasi */
+@keyframes fly {
+  0% { transform:translateX(0) translateY(0);}
+  50% { transform:translateX(50px) translateY(-20px);}
+  100% { transform:translateX(0) translateY(0);}
+}
+
+.butterfly, .butterfly2 {
+  position:absolute;
+  font-size:24px;
+  animation: fly 5s ease-in-out infinite;
+}
+
+.butterfly {
+  top:30%;
+  left:5%;
+}
+
+.butterfly2 {
+  bottom:25%;
+  right:5%;
+}
+
+</style>
+
     /* ── RSVP form ───────────────────────────────── */
     .rsvp-input {
       width: 100%;
